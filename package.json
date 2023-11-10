@@ -1,0 +1,20 @@
+{
+  "name": "yarn-mono",
+  "packageManager": "yarn@3.6.4",
+  "private": true,
+  "scripts": {
+    "common": "yarn workspace @pnds/common",
+    "component": "yarn workspace @pnds/component",
+    "nextapp": "yarn workspace next-app",
+    "nestapp": "yarn workspace nest-app",
+    "nativeapp": "yarn workspace native-app"
+  },
+  "workspaces": [
+    "packages/*/*",
+    "packages/libs/frontend/*",
+    "packages/libs/backend/*"
+  ],
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}
